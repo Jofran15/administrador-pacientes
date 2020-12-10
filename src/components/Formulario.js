@@ -1,6 +1,7 @@
 
 
 import React, { useState } from "react";
+import Proptypes from 'prop-types'
 
 
 
@@ -127,5 +128,9 @@ const Formulario = ({crearCita}) => {
     </div>
   );
 };
+
+Formulario.propTypes={
+  crearCita:Proptypes.func.isRequired
+}
 
 export default Formulario;
